@@ -40,23 +40,39 @@
 
         <div class="main-bg">
 
-            <div style="display:flex;flex-direction:column;gap:2.75rem ;align-items:center;position:relative;top:14%;">
+            <div style="display:flex;flex-direction:column;gap:2.75rem ;align-items:center;position:relative;top:10%;">
 
                 <div class="flex-col-gap-1">
-                    <div class="main-title"> Welcome to Supertutor </div>
-                    <div class="title2"> Start by entering your access code below </div>        
-                </div>
-
-
-                <div class="flex-col-gap-05">
-                    <div class="black-md"> Enter access code </div>
-                    <input class="custom-input" style="width:30rem;" placeholder="Type your access code to start ..." />
-                    <div class="grey-md">Dont have access code? <a class="blue-md" href="">Get access code</a> </div>
+                    <div class="main-title" style="text-align:center;"> Your Focus Today </div>
+                    <div class="title2" style="text-align:center;">  Select your current grade level and subject of focus, <br> To customize your learning experience </div>        
                 </div>
 
                 <div class="flex-col-gap-15">
-                    <button class="blue-action-btn" style="width:32rem;" onclick="window.location.href = 'page2.html'"> Submit </button>
-                    <div class="blue-md cursor" style="text-align:center;"> or Continue as a guest </div>
+
+                    <div class="flex-col-gap-05">
+                        <div class="black-md"> Grade </div>
+                        <select class="custom-select2" style="width:32rem;">
+                            <option selected>Select Grade</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+    
+                    <div class="flex-col-gap-05">
+                        <div class="black-md"> Subject </div>
+                        <select class="custom-select2" style="width:32rem;">
+                            <option selected>Select Subject</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="flex-col-gap-15">
+                    <button class="blue-action-btn" style="width:32rem;" onclick="window.location.href = 'page3.html'"> Submit </button>
                 </div>
 
 
