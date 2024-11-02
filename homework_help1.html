@@ -10,6 +10,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
+    <style>
+        .blue-action-btn{
+            padding: 0.65rem 0.75rem;
+        }
+
+        .fixed-bar {
+            position: fixed;
+            bottom: 10%;
+            left: 50%;
+            width: 40%;
+            transform: translateX(-50%);
+        }
+
+
+    </style>
     <body style="height:83%;">
 
         <div class="navbar" >
@@ -56,10 +71,15 @@
                     <div class="grey-md2"> you may also upload an image for additional clarity </div>
                 </div>
 
-                <div class="blue-action-btn" style="width:6rem;"> + New Topic </div>
+                <button class="blue-action-btn" style="width:8rem;"> + New Topic </button>
 
             </div>
 
+            <div class="flex-gap-05 custom-input2 fixed-bar">
+                <img src="assets/pin.svg" />
+                <input placeholder="Type your question here..." class="custom-input2" style="width:100%;border:none;outline:none;padding:0;" />
+                <button class="blue-action-btn" style="width:7rem;"> Send </button>
+            </div>
      
 
         </div>
