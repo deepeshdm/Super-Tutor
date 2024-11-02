@@ -130,6 +130,32 @@ html,body{
 
 }
 
+
+.custom-radio-btn{
+  display: flex;
+  padding: 0.65rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #FFF;
+  min-width: 6.5rem;
+  max-width:15rem;
+  color: #343434;
+  font-family: "Plus Jakarta Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  input{
+    width:1.25rem;
+    height:1.25rem;
+    cursor: pointer;
+  }
+}
+
+
 .flex-gap-05{
   display:flex;
   align-items:center;
@@ -343,7 +369,7 @@ letter-spacing: -0.0125rem;
 
 .grey-md{
   color: var(--Body-color, #848484);
-  text-align: right;
+  /* text-align: right; */
   /* 16 semibold */
   font-family: "Bricolage Grotesque";
   font-size: 1rem;
@@ -354,7 +380,7 @@ letter-spacing: -0.0125rem;
 
 .grey-md2{
   color: var(--Body-color, #848484);
-  text-align: center;
+  /* text-align: center; */
   font-family: "Plus Jakarta Sans";
   font-size: 0.875rem;
   font-style: normal;

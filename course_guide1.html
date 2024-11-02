@@ -55,40 +55,63 @@
 
                 <div class="flex-gap-05 cursor" onclick="window.location.href = 'page3.html'">
                     <img src="assets/chevron.png" style="width:0.65rem;" />
-                    <div class="black-md-700"> Homework Help </div>
+                    <div class="black-md-700"> Course Guide </div>
                 </div>
 
-                <div style="width: 45%;height: 75vh;display: flex;flex-direction: column;justify-content: space-between;">
+                <div style="width: 45%;height: 75vh;display: flex;flex-direction:column; gap:1.5rem;">
 
                     <div class="flex-col-gap-05" style="margin-top:2.25rem;">
-                        <div class="black-lg-700">  Please enter the details of your question below </div>
-                        <div class="grey-md2" style="text-align:center;"> you may also upload an image for additional clarity </div>
+                        <div class="black-lg-700"> Enter the topic you need help with </div>
+                        <div class="grey-md2" style="text-align:center;"> then select your familiarity level and desired detail </div>
                     </div>
 
-                    <div class="flex-col-gap-15">
+                    <div class="flex-col-gap-2 custom-input2" style="padding:1rem;">
+                        <input placeholder="Enter the topic you need help with" class="custom-input2" 
+                        style="width:100%;border:none;outline:none;padding:0;opacity:0.65;;font-family: 'Plus Jakarta Sans';height:3rem;" />
 
-                        <div class="question-card">
-                            <div> What causes thunderstorms? </div>
-                            <div class="divider"></div>
-                            <div>Step 1: Warm, moist air rises – Thunderstorms typically form when warm, moist air rises rapidly.</div>
-                            <div>Step 2: Formation of clouds – As the air rises, it cools and condenses into clouds, often forming cumulonimbus clouds.</div>
-                            <div>Step 3: Electric charge build-up – Within the clouds, positive and negative charges separate, eventually leading to lightning and thunder.</div>
-                        </div>
-
-                        <div>
-                            <div class="flex-gap-05 custom-input2">
-                                <img src="assets/pin.svg" />
-                                <input placeholder="Type your question here..." class="custom-input2" style="width:100%;border:none;outline:none;padding:0;" />
-                                <button class="blue-action-btn" style="width:7rem;"> Send </button>
+                        <div class="flex-col-gap-1">
+                            <div class="grey-md">Your familiarity with topic</div>
+                            <div class="flex-gap-1">
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> High </div>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> Medium </div>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> Low </div>
+                                </div>
                             </div>
                         </div>
 
+                        <div class="flex-col-gap-1">
+                            <div class="grey-md">Level of detail required</div>
+                            <div class="flex-gap-1">
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> Detailed </div>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> Very Detailed </div>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" />
+                                    <div> High-level  Bulleted List </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <button class="blue-action-btn" style="width:5rem;"> Send </button>
                     </div>
 
                 </div>
 
-                <button class="blue-action-btn" style="width:8rem;"> + New Topic </button>
+                <!-- Hidden -->
+                <button class="blue-action-btn" style="width:8rem; visibility:hidden !important;"> + New Topic </button>
 
             </div>
      
