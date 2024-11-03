@@ -348,6 +348,16 @@ line-height: 175%; /* 1.53125rem */
 letter-spacing: -0.0175rem;
 }
 
+.black-md-33{
+  color: var(--Heading-color, #242424);
+  font-family: "Bricolage Grotesque";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015rem;
+}
+
 .black-md-700{
   color: #000;
 font-family: "Bricolage Grotesque";
