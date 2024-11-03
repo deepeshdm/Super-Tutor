@@ -154,7 +154,7 @@
     </div>
 
     <dialog id="feedbackDialog" style="width:28%;">
-        <form method="dialog" class="feedback-dialog" style="padding:0;width:85%;" onsubmit="handleSubmit(event)">
+        <form method="dialog" id="dialogContent" class="feedback-dialog" style="padding:0;width:85%;" onsubmit="handleSubmit(event)">
             <div class="flex-gap-05 cursor" id="closeDialog">
                 <img src="assets/chevron.png" style="width:0.65rem;" />
                 <div class="black-md-700"> Close </div>
@@ -170,6 +170,7 @@
 
     <script>
         const dialog = document.getElementById("feedbackDialog");
+        const dialogContent = document.getElementById("dialogContent");
         const shareThoughtsLink = document.getElementById("shareThoughts");
         const closeDialogBtn = document.getElementById("closeDialog");
 
@@ -185,9 +186,24 @@
         function handleSubmit(event) {
             event.preventDefault(); // Prevent default form submission
             // You can handle form data submission here
+
+            dialogContent.style.width = "100%";
+            dialog.style.padding = '1.85rem';
+            // Update the dialog content
+            dialogContent.innerHTML = `
+                <div class="flex-col-gap-1">
+                    <div class="flex-gap-05 cursor" id="closeDialog" onclick="window.location.href = 'page3.html'">
+                        <img src="assets/chevron.png" style="width:0.65rem;" />
+                        <div class="black-md-700"> Close </div>
+                    </div>
+                    <div class="flex-col-gap-15" style="align-items:center">
+                        <img src='assets/greencheck.svg' style="5rem" />
+                        <div class="black-md-33" style='text-align:center'> Feedback submitted successfully! </div>
+                    </div>
+                </div>
+            `;
+
             console.log("Feedback submitted");
-            console.log()
-            dialog.close(); // Close the dialog after submission
         }
     </script>
 </body>
