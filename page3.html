@@ -172,7 +172,7 @@
         </div>
     </div>
 
-    <dialog id="feedbackDialog" style="width:28%;">
+    <dialog id="feedbackDialog" style="width:28%; display:none;">
         <form method="dialog" id="dialogContent" class="feedback-dialog" style="padding:0;width:85%;" onsubmit="handleSubmit(event)">
             <div class="flex-gap-05 cursor" id="closeDialog">
                 <img src="assets/chevron.png" style="width:0.65rem;" />
@@ -195,10 +195,12 @@
 
         shareThoughtsLink.onclick = function(event) {
             event.preventDefault(); // Prevent default link behavior
+            dialog.style.display = "inline"
             dialog.showModal(); // Show the dialog
         }
 
         closeDialogBtn.onclick = function() {
+            dialog.style.display = "none"
             dialog.close(); // Close the dialog
         }
 
