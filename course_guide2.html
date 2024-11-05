@@ -11,8 +11,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
     <style>
+
         .blue-action-btn{
             padding: 0.65rem 0.75rem;
+        }
+
+        .midcon{
+            width: 45%;
+            height: 75vh;
+            display: flex;
+            flex-direction:column;
+            gap:1.35rem;
+        }
+
+        @media (max-width: 850px) {
+
+            .midcon{
+                width:60%;
+            }
+
         }
 
 
@@ -53,12 +70,12 @@
 
             <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
 
-                <div class="flex-gap-05 cursor" onclick="window.location.href = 'course_guide1.html'">
+                <div class="flex-gap-05 cursor" style="margin-left:1rem;" onclick="window.location.href = 'course_guide1.html'">
                     <img src="assets/chevron.png" style="width:0.65rem;" />
                     <div class="black-md-700"> Course Guide </div>
                 </div>
 
-                <div style="width: 45%;height: 75vh;display: flex;flex-direction:column; gap:1.35rem;">
+                <div class="midcon">
 
                     <div>
                         <div class="grey-md2"> Topic entered </div>
@@ -80,7 +97,7 @@
 
                 </div>
 
-                <button class="blue-action-btn" style="width:8rem;"> + New Topic </button>
+                <button class="blue-action-btn" style="width:8rem;margin-right:1rem;"> + New Topic </button>
 
             </div>
      
