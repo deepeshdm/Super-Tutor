@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html style="height:95%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SuperTutor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+        #feedbackDialog{
+            width:30%;
+        }
+
+        dialog {
+            border: none;
+        }
+        dialog, .feedback-dialog {
+            display: flex;
+            padding: 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            border-radius: 1.5rem;
+            background: #FFF;
+        }
+
+        /* Darker backdrop styling */
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
+        }
+
+        .feedback-textarea{
+            display: flex;
+            padding: var(--16, 1rem) var(--20, 1.25rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            align-self: stretch;
+            border-radius: var(--16, 1rem);
+            border: 1px solid rgba(0, 0, 0, 0.20);
+            background: #FFF;
+            color: var(--sds-color-text-default-tertiary);
+            /* 16 medium */
+            font-family: "Plus Jakarta Sans";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 300;
+            opacity: 0.5;
+            line-height: 1.25rem; /* 125% */
+            outline: none;
+            width:100%;
+        }
+
+        @media (max-width: 900px) {
+
+            #feedbackDialog{
+                width:50%;
+            }   
+        }
+
+        @media (max-width: 600px) {
+
+            .main-title{
+                font-size: 2.5rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            #feedbackDialog{
+                width:60%;
+            }   
+
+            .main-title{
+                font-size: 2.5rem;
+            }
+
+            .navbar{
+                padding: 1rem 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="./assets/logo.svg" style="height:2.5rem;width:2.5rem;cursor: pointer;" onclick="window.location.href = 'index.html'" />
+        <div class="flex-gap-2" style="gap:2.5rem;">
+            <div class="black-md2"> Balance &nbsp;&nbsp; | &nbsp;&nbsp; $20 </div>
+            <select class="custom-select" style="width:4rem;">
+                <option selected>EN</option>
+                <option value="es">ES</option>
+                <option value="fr">FR</option>
+                <option value="de">DE</option>
+                <option value="it">IT</option>
+                <option value="pt">PT</option>
+                <option value="ru">RU</option>
+                <option value="zh">ZH</option>
+                <option value="ja">JA</option>
+                <option value="ko">KO</option>
+                <option value="ar">AR</option>
+                <option value="hi">HI</option>
+                <option value="nl">NL</option>
+                <option value="sv">SV</option>
+                <option value="da">DA</option>
+                <option value="no">NO</option>
+                <option value="fi">FI</option>
+                <option value="pl">PL</option>
+                <option value="tr">TR</option>
+                <option value="cs">CS</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main-bg2">
+        <div style="display:flex;flex-direction:column;gap:2.5rem;align-items:center;position:relative;top:8%;">
+            <div class="flex-gap-1" style="background:white;padding:0.65rem 1rem;border-radius:8px;cursor:pointer;">
+                <div class="black-md2">8th Grade</div>
+                <div class="black-md2">|</div>
+                <select class="custom-select black-md2" style="background-position: right -1px center;width: 5rem;" onchange="window.location.href = 'page2.html'">
+                    <option selected>Subject</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                </select>
+            </div>
+
+            <div class="flex-col-gap-1">
+                <div class="main-title" style="text-align:center;"> Activities </div>
+            </div>
+
+            <div class="flex-gap-15" style="flex-wrap:wrap;justify-content:center;">
+                <div class="card" onclick="window.location.href = 'homework_help1.html' ">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="6" fill="#F1F4FF"/>
+                        <path d="M19 30C18.7167 30 18.4792 29.9042 18.2875 29.7125C18.0958 29.5208 18 29.2833 18 29V27H31V18H33C33.2833 18 33.5208 18.0958 33.7125 18.2875C33.9042 18.4792 34 18.7167 34 19V34L30 30H19ZM14 29V15C14 14.7167 14.0958 14.4792 14.2875 14.2875C14.4792 14.0958 14.7167 14 15 14H28C28.2833 14 28.5208 14.0958 28.7125 14.2875C28.9042 14.4792 29 14.7167 29 15V24C29 24.2833 28.9042 24.5208 28.7125 24.7125C28.5208 24.9042 28.2833 25 28 25H18L14 29Z" fill="#1340DF"/>
+                    </svg>
+                    <div class="flex-col-gap-05">
+                        <div class="title">Homework Help</div>
+                        <div class="subtitle">Get step-by-step answers to your questions</div>
+                    </div>    
+                </div>
+
+                <div class="card" onclick="window.location.href = 'course_guide1.html' ">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="6" fill="#F1F4FF"/>
+                        <path d="M24 34C23.45 34 22.9792 33.8042 22.5875 33.4125C22.1958 33.0208 22 32.55 22 32H26C26 32.55 25.8042 33.0208 25.4125 33.4125C25.0208 33.8042 24.55 34 24 34ZM20 31V29H28V31H20ZM20.25 28C19.1 27.3167 18.1875 26.4 17.5125 25.25C16.8375 24.1 16.5 22.85 16.5 21.5C16.5 19.4167 17.2292 17.6458 18.6875 16.1875C20.1458 14.7292 21.9167 14 24 14C26.0833 14 27.8542 14.7292 29.3125 16.1875C30.7708 17.6458 31.5 19.4167 31.5 21.5C31.5 22.85 31.1625 24.1 30.4875 25.25C29.8125 26.4 28.9 27.3167 27.75 28H20.25Z" fill="#1340DF"/>
+                    </svg>                            
+                    <div class="flex-col-gap-05">
+                        <div class="title">Course Guide</div>
+                        <div class="subtitle">Understand topics better with tailored explanations</div>
+                    </div>    
+                </div>
+
+                <div class="card" onclick="window.location.href = 'practice_quiz1.html' ">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="6" fill="#F1F4FF"/>
+                        <path d="M14 32V28H18V32H14ZM20 32V28H34V32H20ZM14 26V22H18V26H14ZM20 26V22H34V26H20ZM14 20V16H18V20H14ZM20 20V16H34V20H20Z" fill="#1340DF"/>
+                    </svg>                            
+                    <div class="flex-col-gap-05">
+                        <div class="title">Practice Quizzes</div>
+                        <div class="subtitle">Test your knowledge and get instant feedback.</div>
+                    </div>    
+                </div>
+
+                <div class="card" onclick="window.location.href = 'course_guide1.html' ">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="6" fill="#F1F4FF"/>
+                        <path d="M17 33C16.45 33 15.9792 32.8042 15.5875 32.4125C15.1958 32.0208 15 31.55 15 31V17C15 16.45 15.1958 15.9792 15.5875 15.5875C15.9792 15.1958 16.45 15 17 15H31C31.55 15 32.0208 15.1958 32.4125 15.5875C32.8042 15.9792 33 16.45 33 17V27L27 33H17ZM26 31L31 26H26V31ZM19 26H24V24H19V26ZM19 22H29V20H19V22Z" fill="#1340DF"/>
+                    </svg>                            
+                    <div class="flex-col-gap-05">
+                        <div class="title">Exam Preparation</div>
+                        <div class="subtitle">Boost your confidence with exam preps tailored to your needs</div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="black-md2" style="padding-bottom:1rem;text-align:center;">
+                “Your Feedback Matters! Help us improve Super Tutors—<a href="#" id="shareThoughts">share your thoughts here</a>!”
+            </div>
+
+        </div>
+    </div>
+
+    <dialog id="feedbackDialog" style="display:none;">
+        <form method="dialog" id="dialogContent" class="feedback-dialog" style="padding:0;width:85%;" onsubmit="handleSubmit(event)">
+            <div class="flex-gap-05 cursor" id="closeDialog">
+                <img src="assets/chevron.png" style="width:0.65rem;" />
+                <div class="black-md-700"> Close </div>
+            </div>
+            <div class="flex-col-gap-05">
+                <div class="black-md-33"> Your Feedback Matters </div>
+                <div class="grey-md2"> Help us improve Super Tutors </div>
+            </div>
+            <textarea class="feedback-textarea" placeholder="Write your feedback here" style="height:3rem;"></textarea>
+            <button class="blue-action-btn" style="width:6rem;" type="submit"> Submit </button>
+        </form>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById("feedbackDialog");
+        const dialogContent = document.getElementById("dialogContent");
+        const shareThoughtsLink = document.getElementById("shareThoughts");
+        const closeDialogBtn = document.getElementById("closeDialog");
+
+        shareThoughtsLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            dialog.style.display = "inline"
+            dialog.showModal(); // Show the dialog
+        }
+
+        closeDialogBtn.onclick = function() {
+            dialog.style.display = "none"
+            dialog.close(); // Close the dialog
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission
+            // You can handle form data submission here
+
+            dialogContent.style.width = "100%";
+            dialog.style.padding = '1.85rem';
+            // Update the dialog content
+            dialogContent.innerHTML = `
+                <div class="flex-col-gap-1">
+                    <div class="flex-gap-05 cursor" id="closeDialog" onclick="window.location.href = 'page3.html'">
+                        <img src="assets/chevron.png" style="width:0.65rem;" />
+                        <div class="black-md-700"> Close </div>
+                    </div>
+                    <div class="flex-col-gap-15" style="align-items:center">
+                        <img src='assets/greencheck.svg' style="5rem" />
+                        <div class="black-md-33" style='text-align:center'> Feedback submitted successfully! </div>
+                    </div>
+                </div>
+            `;
+
+            console.log("Feedback submitted");
+        }
+    </script>
+</body>
+</html>

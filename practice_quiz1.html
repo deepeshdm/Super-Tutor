@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SuperTutor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .blue-action-btn{
+            padding: 0.65rem 0.75rem;
+        }
+
+
+    </style>
+    <body style="height:83%;">
+
+        <div class="navbar" >
+            <img src="./assets/logo.svg" style="height:2.5rem;width:2.5rem;cursor: pointer;" onclick="window.location.href = 'index.html'" />
+            <div class="flex-gap-2" style="gap:2.5rem;">
+                <div class="black-md2"> Balance &nbsp;&nbsp; | &nbsp;&nbsp; $20 </div>
+                <select class="custom-select" style="width:4rem;">
+                    <option selected>EN</option>
+                    <option value="es">ES</option>
+                    <option value="fr">FR</option>
+                    <option value="de">DE</option>
+                    <option value="it">IT</option>
+                    <option value="pt">PT</option>
+                    <option value="ru">RU</option>
+                    <option value="zh">ZH</option>
+                    <option value="ja">JA</option>
+                    <option value="ko">KO</option>
+                    <option value="ar">AR</option>
+                    <option value="hi">HI</option>
+                    <option value="nl">NL</option>
+                    <option value="sv">SV</option>
+                    <option value="da">DA</option>
+                    <option value="no">NO</option>
+                    <option value="fi">FI</option>
+                    <option value="pl">PL</option>
+                    <option value="tr">TR</option>
+                    <option value="cs">CS</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="main-bg2">
+
+
+            <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
+
+                <div class="flex-gap-05 cursor" onclick="window.location.href = 'page3.html'">
+                    <img src="assets/chevron.png" style="width:0.65rem;" />
+                    <div class="black-md-700"> Practice Quizzes </div>
+                </div>
+
+                <div style="width: 45%;height: 75vh;display: flex;flex-direction:column; gap:1.5rem;">
+
+                    <div class="flex-col-gap-05" style="margin-top:2.25rem;">
+                        <div class="black-lg-700"> Start by selecting a topic and select your familiarity level </div>
+                        <div class="grey-md2" style="text-align:center;"> Our quizzes are designed to reinforce learning and provide instant feedback </div>
+                    </div>
+
+                    <div class="flex-col-gap-2 custom-input2" style="padding:1rem;">
+                        <input placeholder="Enter the topic you need help with" class="custom-input2" 
+                        style="width:100%;border:none;outline:none;padding:0;opacity:0.65;;font-family: 'Plus Jakarta Sans';height:3rem;" />
+
+                        <div class="flex-col-gap-1">
+                            <div class="grey-md">Your familiarity with topic</div>
+                            <div class="flex-gap-1">
+                                <div class="custom-radio-btn">
+                                    <input type="radio" name="priority" id="high" />
+                                    <label for="high">High</label>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" name="priority" id="medium" />
+                                    <label for="medium">Medium</label>
+                                </div>
+                                <div class="custom-radio-btn">
+                                    <input type="radio" name="priority" id="low" />
+                                    <label for="low">Low</label>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <button class="blue-action-btn" style="width:5rem;" onclick="window.location.href = 'practice_quiz2.html'"> Send </button>
+                    </div>
+
+                </div>
+
+                <!-- Hidden -->
+                <button class="blue-action-btn" style="width:8rem; visibility:hidden !important;"> + New Topic </button>
+
+            </div>
+     
+
+        </div>
+
+        <div class="bottombar">
+            Supertutor promotes excellence. Use it  responsibly
+        </div>
+
+
+    </body>
+</html> 

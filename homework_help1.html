@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SuperTutor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+        .mainconteent2{
+            padding-top: 2rem;
+        }
+
+        .blue-action-btn{
+            padding: 0.65rem 0.75rem;
+        }
+
+        .middlepart {
+            width: 50%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 1100px) {
+
+            .middlepart {
+                width: 60%;
+            }
+
+        }
+
+        @media (max-width: 800px) {
+
+            .middlepart {
+                width: 25%;
+                align-items: center;
+            }
+
+            .question-card , .mid-content{
+                width:30rem;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .black-lg-700{
+                font-size: 1rem;
+            }
+            .grey-md2{
+                font-size:0.75rem;
+            }
+
+            .question-card , .mid-content{
+                width:25rem;
+            }
+
+            .mainconteent2{
+                padding-top: 1rem;
+            }
+
+            .blue-action-btn {
+                padding: 0.45rem 0.25rem;
+                font-size: 0.85rem;
+            }   
+
+        }
+
+
+        @media (max-width: 550px) {
+
+                .question-card , .mid-content{
+                    width:23rem;
+                }
+                .question-card{
+                    padding:1rem;
+                }
+
+                .mid-content{
+                    margin-top: 3rem !important;
+                    margin-bottom: 1rem;
+                }
+
+                .ques{
+                    gap: 1rem !important;
+                }
+
+                .navbar{
+                    padding: 1rem 2rem;
+                }
+
+            }
+
+
+    </style>
+    <body style="height:83%;">
+
+        <div class="navbar" >
+            <img src="./assets/logo.svg" style="height:2.5rem;width:2.5rem;cursor: pointer;" onclick="window.location.href = 'index.html'" />
+            <div class="flex-gap-2" style="gap:2.5rem;">
+                <div class="black-md2"> Balance &nbsp;&nbsp; | &nbsp;&nbsp; $20 </div>
+                <select class="custom-select" style="width:4rem;">
+                    <option selected>EN</option>
+                    <option value="es">ES</option>
+                    <option value="fr">FR</option>
+                    <option value="de">DE</option>
+                    <option value="it">IT</option>
+                    <option value="pt">PT</option>
+                    <option value="ru">RU</option>
+                    <option value="zh">ZH</option>
+                    <option value="ja">JA</option>
+                    <option value="ko">KO</option>
+                    <option value="ar">AR</option>
+                    <option value="hi">HI</option>
+                    <option value="nl">NL</option>
+                    <option value="sv">SV</option>
+                    <option value="da">DA</option>
+                    <option value="no">NO</option>
+                    <option value="fi">FI</option>
+                    <option value="pl">PL</option>
+                    <option value="tr">TR</option>
+                    <option value="cs">CS</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="main-bg2">
+
+
+            <div class="mainconteent2" style="display:flex;align-items:flex-start;justify-content:space-around;">
+
+                <div class="flex-gap-05 cursor" onclick="window.location.href = 'page3.html'">
+                    <img src="assets/chevron.png" style="width:0.65rem;" />
+                    <div class="black-md-700"> Homework Help </div>
+                </div>
+
+                <div class="middlepart">
+
+                    <div class="flex-col-gap-05 mid-content" style="margin-top:2.25rem;">
+                        <div class="black-lg-700">  Please enter the details of your question below </div>
+                        <div class="grey-md2" style="text-align:center;"> you may also upload an image for additional clarity </div>
+                    </div>
+
+                    <div class="ques flex-col-gap-15">
+
+                        <div class="question-card">
+                            <div> What causes thunderstorms? </div>
+                            <div class="divider"></div>
+                            <div>Step 1: Warm, moist air rises – Thunderstorms typically form when warm, moist air rises rapidly.</div>
+                            <div>Step 2: Formation of clouds – As the air rises, it cools and condenses into clouds, often forming cumulonimbus clouds.</div>
+                            <div>Step 3: Electric charge build-up – Within the clouds, positive and negative charges separate, eventually leading to lightning and thunder.</div>
+                        </div>
+
+                        <div>
+                            <div class="flex-gap-05 custom-input2">
+                                <img src="assets/pin.svg" />
+                                <input placeholder="Type your question here..." class="custom-input2" style="width:100%;border:none;outline:none;padding:0;" />
+                                <button class="blue-action-btn" style="width:7rem;"> Send </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <button class="blue-action-btn" style="width:8rem;"> + New Topic </button>
+
+            </div>
+     
+
+        </div>
+
+        <div class="bottombar">
+            Supertutor promotes excellence. Use it  responsibly
+        </div>
+
+
+    </body>
+</html> 
