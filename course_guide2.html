@@ -17,19 +17,43 @@
         }
 
         .midcon{
-            width: 45%;
+            width: 50%;
             height: 75vh;
             display: flex;
             flex-direction:column;
             gap:1.35rem;
         }
 
-        @media (max-width: 850px) {
+        .top-part{
+            display:flex;
+            align-items:flex-start;
+            margin-top: 2rem;
+            width: 60%;
+            justify-content: space-between;
+        }
 
-            .midcon{
-                width:60%;
+
+        @media (max-width: 800px) {
+
+            .top-part{
+                width: 85%;
             }
 
+            .midcon{
+                width: 70%;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .top-part{
+                width: 90%;
+            }
+
+            .midcon{
+                width: 80%;
+            }
         }
 
 
@@ -68,25 +92,32 @@
         <div class="main-bg2">
 
 
-            <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
+            <div style="justify-content: center;display: flex;flex-direction: column;align-items: center;">
 
-                <div class="flex-gap-05 cursor" style="margin-left:1rem;" onclick="window.location.href = 'course_guide1.html'">
-                    <img src="assets/chevron.png" style="width:0.65rem;" />
-                    <div class="black-md-700"> Course Guide </div>
+
+                <div class="top-part">
+
+                    <div class="flex-gap-05 cursor" style="margin-left:1rem;" onclick="window.location.href = 'course_guide1.html'">
+                        <img src="assets/chevron.png" style="width:0.65rem;" />
+                        <div class="black-md-700"> Course Guide </div>
+                    </div>
+    
+                    <button class="blue-action-btn" style="width:8rem;margin-right:1rem;"> + New Topic </button>
+    
                 </div>
-
+    
                 <div class="midcon">
-
+    
                     <div>
                         <div class="grey-md2"> Topic entered </div>
                         <div class="black-md2" style="font-size:1rem;"> Photosynthesis </div>
                     </div>
-
+    
                     <div>
                         <div class="grey-md2"> Additional Details </div>
                         <div class="black-md2" style="font-size:1rem;"> High,Detailed </div>
                     </div>
-
+    
                     <div class="question-card">
                         <div> Definition: Photosynthesis is the process by which plants use sunlight to produce energy. </div>
                         <div>Key Points:</div>
@@ -94,10 +125,9 @@
                         <div>Requires sunlight, water, and carbon dioxide.</div>
                         <div>Produces glucose and oxygen as outputs.</div>
                     </div>
-
+    
                 </div>
 
-                <button class="blue-action-btn" style="width:8rem;margin-right:1rem;"> + New Topic </button>
 
             </div>
      
