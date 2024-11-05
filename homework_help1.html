@@ -20,6 +20,10 @@
             padding: 0.65rem 0.75rem;
         }
 
+        .mid-content{
+            margin-top: 2.25rem;
+        }
+
         .middlepart {
             width: 50%;
             height: 75vh;
@@ -41,10 +45,15 @@
             .middlepart {
                 width: 25%;
                 align-items: center;
+                height: 72vh;
             }
 
             .question-card , .mid-content{
                 width:30rem;
+            }
+
+            .mid-content{
+                margin-top: 4.25rem !important;
             }
 
         }
@@ -110,6 +119,10 @@
                 padding: 0.5rem 0.85rem;
             }
 
+            .ques{
+                flex-direction: column-reverse;
+            }
+
         }
 
         @media (max-width: 420px) {
@@ -170,7 +183,7 @@
 
                 <div class="middlepart">
 
-                    <div class="flex-col-gap-05 mid-content" style="margin-top:2.25rem;">
+                    <div class="flex-col-gap-05 mid-content">
                         <div class="black-lg-700">  Please enter the details of your question below </div>
                         <div class="grey-md2" style="text-align:center;"> you may also upload an image for additional clarity </div>
                     </div>

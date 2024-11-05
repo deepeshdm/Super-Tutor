@@ -219,6 +219,11 @@ html,body{
   width:100%;
   padding: 0.85rem 1rem;
   cursor: pointer;
+
+  &:hover{
+    opacity: 0.85;
+  }
+
 }
 
 .cursor{
