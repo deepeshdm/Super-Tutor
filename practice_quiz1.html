@@ -17,9 +17,75 @@
 
         @media (max-width: 550px) {
 
-        .navbar{
-            padding: 1rem 2rem;
+            .navbar{
+                padding: 1rem 2rem;
+            }
+
         }
+
+        .top-part{
+            margin-left:10vw;
+        }
+        
+        .main-part{
+            width: 50vw;
+            height: 75vh;
+            display: flex;
+            flex-direction:column;
+            gap:1.5rem;
+            align-self:center;
+        }
+
+        @media (max-width: 1050px) {
+
+            .main-part{
+                width: 60vw;
+            }
+
+        }
+
+        @media (max-width: 950px) {
+
+            .main-part{
+                width: 70vw;
+            }
+
+        }
+
+        @media (max-width: 750px) {
+
+            .main-part{
+                width: 80vw;
+            }
+
+        }
+
+        @media (max-width: 560px) {
+
+            .ops{
+                flex-direction: column;
+            }
+
+            .custom-radio-btn{
+                max-width: unset;
+                width: 90%;
+            }
+
+            .custom-input2{
+                gap: 0 !important;
+            }
+
+            .blue-action-btn{
+                margin-top: 1rem;
+            }
+
+            .top-part{
+                margin-left: 5vw;
+            }
+
+            .main-part{
+                margin-right: 1.5rem;
+            }
 
         }
 
@@ -59,27 +125,27 @@
         <div class="main-bg2">
 
 
-            <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
+            <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
 
-                <div class="flex-gap-05 cursor" onclick="window.location.href = 'page3.html'">
+                <div class="flex-gap-05 cursor top-part" onclick="window.location.href = 'page3.html'">
                     <img src="assets/chevron.png" style="width:0.65rem;" />
                     <div class="black-md-700"> Practice Quizzes </div>
                 </div>
 
-                <div style="width: 45%;height: 75vh;display: flex;flex-direction:column; gap:1.5rem;">
+                <div class="main-part">
 
-                    <div class="flex-col-gap-05" style="margin-top:2.25rem;">
+                    <div class="flex-col-gap-05" style="margin-top:1.5rem;">
                         <div class="black-lg-700"> Start by selecting a topic and select your familiarity level </div>
                         <div class="grey-md2" style="text-align:center;"> Our quizzes are designed to reinforce learning and provide instant feedback </div>
                     </div>
 
-                    <div class="flex-col-gap-2 custom-input2" style="padding:1rem;">
+                    <div class="flex-col-gap-2 custom-input2" style="padding:1rem;width:100%;">
                         <input placeholder="Enter the topic you need help with" class="custom-input2" 
                         style="width:100%;border:none;outline:none;padding:0;opacity:0.65;;font-family: 'Plus Jakarta Sans';height:3rem;" />
 
                         <div class="flex-col-gap-1">
                             <div class="grey-md">Your familiarity with topic</div>
-                            <div class="flex-gap-1">
+                            <div class="flex-gap-1 ops">
                                 <div class="custom-radio-btn">
                                     <input type="radio" name="priority" id="high" />
                                     <label for="high">High</label>
