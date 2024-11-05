@@ -23,11 +23,40 @@
 
         @media (max-width: 550px) {
 
-        .navbar{
-            padding: 1rem 2rem;
-        }
+            .navbar{
+                padding: 1rem 2rem;
+            }
 
         }
+
+
+        .card1{
+            width: 45%;
+            height: 85vh;
+            display: flex;
+            flex-direction:column;
+            gap:1.5rem;
+        }
+
+
+        @media (max-width: 1000px) {
+            .card1{
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .card1{
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card1{
+                width: 90%;
+            }
+        }
+
 
     </style>
     <body style="height:83%;">
@@ -61,23 +90,28 @@
             </div>
         </div>
 
-        <div class="main-bg2">
+        <div class="main-bg2" style="overflow-y: scroll;">
 
+            <div style="display:flex;flex-direction: column;align-items:center;gap:1rem;">
 
-            <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;">
+                <div style="display:flex;align-items:flex-start;justify-content:space-around;padding-top:2rem;width:100%;">
 
-                <div class="flex-gap-05 cursor" onclick="window.location.href = 'practice_quiz2.html'">
-                    <img src="assets/chevron.png" style="width:0.65rem;" />
-                    <div class="black-md-700"> Practice Quizzes </div>
+                    <div class="flex-gap-05 cursor" onclick="window.location.href = 'practice_quiz2.html'">
+                        <img src="assets/chevron.png" style="width:0.65rem;" />
+                        <div class="black-md-700"> Practice Quizzes </div>
+                    </div>
+
+                    <button class="blue-action-btn" style="width:8rem;" onclick="window.location.href = 'practice_quiz1.html'"> + New Topic </button>
+
                 </div>
 
-                <div style="width: 45%;height: 75vh;display: flex;flex-direction:column; gap:1.5rem;">
+                <div class="card1">
 
-                    <div class="flex-col-gap-2 custom-input2" style="padding:1rem;">
+                    <div class="flex-col-gap-15 custom-input2" style="padding:1rem;">
 
                         <div class="flex-col-gap-1">
                             <div class="black-md">What is the largest mammal in the world?</div>
-                            <div class="flex-col-gap-15">
+                            <div class="flex-col-gap-1">
                                 <div class="custom-radio-btn">
                                     <input type="radio" disabled />
                                     <label for="high">Elephant</label>
@@ -109,11 +143,7 @@
 
                 </div>
 
-                <!-- Hidden -->
-                <button class="blue-action-btn" style="width:8rem;" onclick="window.location.href = 'practice_quiz1.html'"> + New Topic </button>
-
             </div>
-     
 
         </div>
 
