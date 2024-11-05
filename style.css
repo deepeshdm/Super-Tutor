@@ -266,6 +266,32 @@ html,body{
     font-weight: 400;
     line-height: 1.25rem; /* 142.857% */
   }
+
+
+
+  &:hover{
+    background: #E8EDFB;
+    border: none;
+    outline: none;
+
+      /* Adding transition for scaling */
+    svg, .title, .subtitle {
+      transition: transform 0.2s ease-in; /* Scale down animation */
+    }
+
+    svg {
+      transform: scale(0.7); /* Shrink the svg */
+    }
+
+    .title {
+      transform: scale(0.925); /* Shrink the title */
+    }
+
+    .subtitle {
+      transform: scale(0.925); /* Shrink the subtitle */
+    }
+  }
+
 }
 
 .bottombar{
