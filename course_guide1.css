@@ -1,0 +1,131 @@
+
+
+.blue-action-btn{
+    padding: 0.65rem 0.75rem;
+}
+
+.main101{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    padding-top:2rem;
+}
+
+.con2{
+    margin-top:1.5rem;
+}
+
+@media (max-width: 550px) {
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+
+}
+
+.midpart1{
+    width: 45%;
+    height: 75vh;
+    display: flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+@media (max-width: 1300px) {
+    .con2{
+        margin-top:1.5rem !important;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .midpart1{
+        width: 65%;
+        margin-bottom:2rem;
+    }
+
+    .container1{
+        gap: 1.5rem !important;
+    }
+
+}
+
+@media (max-width: 830px) {
+
+    .midpart1{
+        width: 75%;
+        margin-bottom:2rem;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+.midpart1{
+    width: 85rem;
+    margin-bottom:2rem;
+}
+
+}
+
+
+@media (max-width: 650px) {
+
+    .main101{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .container1 {
+        gap: 1rem !important;
+    }
+
+    .custom-radio-btn{
+        padding: 0.5rem 0.75rem;
+    }
+
+    .midpart1{
+        width: 85vw;
+        align-self: center;
+    }
+
+    .flex-gap-1{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .main-bg2{
+        overflow-y: scroll;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+
+    .midpart1{
+        height: unset;
+    }
+
+    .container1{
+        gap: 1.5rem !important;
+        .flex-gap-1{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .custom-radio-btn{
+            width: 90%;
+            max-width: unset;
+        }
+        .blue-action-btn{
+            width: 95% !important;
+        }
+    }
+
+}
+
+

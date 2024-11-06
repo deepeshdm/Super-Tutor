@@ -1,0 +1,94 @@
+
+
+#feedbackDialog{
+    width:30%;
+}
+
+dialog {
+    border: none;
+}
+dialog, .feedback-dialog {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+}
+
+/* Darker backdrop styling */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
+}
+
+.feedback-textarea{
+    display: flex;
+    padding: var(--16, 1rem) var(--20, 1.25rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+    border-radius: var(--16, 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    color: var(--sds-color-text-default-tertiary);
+    /* 16 medium */
+    font-family: "Plus Jakarta Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 0.5;
+    line-height: 1.25rem; /* 125% */
+    outline: none;
+    width:100%;
+}
+
+@media (max-width: 900px) {
+
+    #feedbackDialog{
+        width:50%;
+    }   
+}
+
+@media (max-width: 600px) {
+
+    .main-title{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #feedbackDialog{
+        width:60%;
+    }   
+
+    .main-title{ 
+        font-size: 2.5rem;
+    }
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .card{
+        flex-direction: row !important;
+        gap: 1rem;
+        height:unset;
+        width: 18.125rem;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    svg{
+        width:3.5rem;
+    }
+
+}

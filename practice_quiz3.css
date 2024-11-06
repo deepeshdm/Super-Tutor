@@ -1,0 +1,100 @@
+
+              /* For green radio button */
+              .green-radio input[type="radio"] {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid green; /* Green border */
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+            }
+    
+            /* Style the checked state of green radio */
+            .green-radio input[type="radio"]:checked::before {
+                content: '';
+                width: 10px;  /* Slightly smaller inner circle */
+                height: 10px;
+                background-color: green; /* Green color when checked */
+                border-radius: 50%;
+                position: absolute;
+                top: 4px;  /* Increased space from the top */
+                left: 4px; /* Increased space from the left */
+            }
+    
+            /* For red radio button */
+            .red-radio input[type="radio"] {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid red; /* Red border */
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+            }
+    
+            /* Style the checked state of red radio */
+            .red-radio input[type="radio"]:checked::before {
+                content: '';
+                width: 10px;  /* Slightly smaller inner circle */
+                height: 10px;
+                background-color: red; /* Red color when checked */
+                border-radius: 50%;
+                position: absolute;
+                top: 4px;  /* Increased space from the top */
+                left: 4px; /* Increased space from the left */
+            }
+    
+            .blue-action-btn{
+                padding: 0.65rem 0.75rem;
+            }
+    
+            .custom-radio-btn{
+                width:90%;
+                min-width: none;
+                max-width: none;
+            }
+    
+            @media (max-width: 550px) {
+    
+                .navbar{
+                    padding: 1rem 2rem;
+                }
+    
+            }
+    
+    
+            .card1{
+                width: 45%;
+                height: 85vh;
+                display: flex;
+                flex-direction:column;
+                gap:1.5rem;
+            }
+    
+    
+            @media (max-width: 1000px) {
+                .card1{
+                    width: 60%;
+                }
+            }
+    
+            @media (max-width: 700px) {
+                .card1{
+                    width: 70%;
+                }
+            }
+    
+            @media (max-width: 600px) {
+                .card1{
+                    width: 90%;
+                }
+            }
+    
+    

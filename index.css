@@ -1,0 +1,67 @@
+
+
+@media (max-width: 599px) {
+
+    .custom-input {
+        width: 25rem !important;
+    }
+
+    .blue-action-btn {
+        width: 27rem !important;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .title2{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .custom-input {
+        width: 20rem !important;
+    }
+
+    .blue-action-btn {
+        width: 22rem !important;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .title2{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .custom-input {
+        width: 18rem !important;
+    }
+
+    .blue-action-btn {
+        width: 20rem !important;
+    }
+
+    .main-title{
+        font-size: 1.75rem;
+    }
+
+    .title2{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+}
+

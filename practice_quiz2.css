@@ -1,0 +1,47 @@
+
+.blue-action-btn{
+    padding: 0.65rem 0.75rem;
+}
+
+.custom-radio-btn{
+    width:90%;
+    min-width: none;
+    max-width: none;
+}
+
+@media (max-width: 550px) {
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+
+}
+
+.top-part{
+    margin-left:10vw;
+    align-self: baseline;
+}
+
+@media (max-width: 850px) {
+    .custom-input2{
+        width: 50vw;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-input2{
+        width: 70vw;
+    }
+}
+
+@media (max-width:500px) {
+    .custom-input2{
+        width: 75vw;
+    }
+
+    .blue-action-btn{
+        width: 100% !important;
+    }
+}
+
