@@ -274,6 +274,8 @@ html,body{
 
 
   &:hover{
+
+    box-shadow: none;
     background: #E8EDFB;
     border: none;
     outline: none;
