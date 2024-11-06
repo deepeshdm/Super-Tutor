@@ -11,6 +11,59 @@
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
     <style>
+
+                /* For green radio button */
+                .green-radio input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid green; /* Green border */
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Style the checked state of green radio */
+        .green-radio input[type="radio"]:checked::before {
+            content: '';
+            width: 10px;  /* Slightly smaller inner circle */
+            height: 10px;
+            background-color: green; /* Green color when checked */
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;  /* Increased space from the top */
+            left: 4px; /* Increased space from the left */
+        }
+
+        /* For red radio button */
+        .red-radio input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid red; /* Red border */
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Style the checked state of red radio */
+        .red-radio input[type="radio"]:checked::before {
+            content: '';
+            width: 10px;  /* Slightly smaller inner circle */
+            height: 10px;
+            background-color: red; /* Red color when checked */
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;  /* Increased space from the top */
+            left: 4px; /* Increased space from the left */
+        }
+
         .blue-action-btn{
             padding: 0.65rem 0.75rem;
         }
@@ -116,7 +169,7 @@
                                     <input type="radio" disabled />
                                     <label for="high">Elephant</label>
                                 </div>
-                                <div class="custom-radio-btn" style="background: #CBFFCF !important;">
+                                <div class="custom-radio-btn green-radio" style="background: #CBFFCF !important;">
                                     <input type="radio" checked />
                                     <label for="medium">Blue Whale</label>
                                 </div>
@@ -124,7 +177,7 @@
                                     <input type="radio" disabled />
                                     <label for="low">Giraffe</label>
                                 </div>
-                                <div class="custom-radio-btn" style="background: #FFE5E5 !important;">
+                                <div class="custom-radio-btn red-radio" style="background: #FFE5E5 !important;">
                                     <input type="radio" checked />
                                     <label for="low"> Great White Shark</label>
                                 </div>
