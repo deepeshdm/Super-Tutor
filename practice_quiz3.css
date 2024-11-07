@@ -103,8 +103,8 @@
 @media only screen and (orientation: landscape) {
 
     .main-bg2 {
-      padding-bottom: 12rem;
-      overflow-y: hidden;
+      padding-bottom: 17rem;
+      overflow-y: hidden  !important;
     }
   
   }
