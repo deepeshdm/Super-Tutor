@@ -104,6 +104,7 @@
 
     .main-bg2 {
       padding-bottom: 12rem;
+      overflow-y: hidden;
     }
   
   }
