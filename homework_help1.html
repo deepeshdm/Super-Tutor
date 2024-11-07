@@ -73,13 +73,28 @@
 
                         <div>
                             <div class="flex-gap-05 custom-input2">
-                                <img src="assets/pin.svg" />
-                                <input placeholder="Type your question here..." class="custom-input2" style="width:100%;border:none;outline:none;padding:0;" />
+                                <!-- Pin SVG -->
+                                <img src="assets/pin.svg" id="pin-icon" style="cursor: pointer;" />
+                                
+                                <!-- Hidden File Input -->
+                                <input type="file" id="file-upload" style="display: none;" />
+                        
+                                <!-- Text Input -->
+                                <input placeholder="Type your question here..." class="custom-input2" 
+                                       style="width:100%;border:none;outline:none;padding:0;" />
+                                
+                                <!-- Send Button -->
                                 <button class="blue-action-btn" style="width:7rem;"> Send </button>
                             </div>
                         </div>
-
-
+                        
+                        <!-- JavaScript to handle click -->
+                        <script>
+                            document.getElementById('pin-icon').addEventListener('click', function() {
+                                document.getElementById('file-upload').click(); // Trigger file input click
+                            });
+                        </script>
+                        
                     </div>
 
                 </div>
