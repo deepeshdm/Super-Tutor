@@ -14,7 +14,8 @@
 
 .middlepart {
     width: 50%;
-    height: 75vh;
+    /* height: 75vh; */
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,10 +51,10 @@
 @media (max-width: 600px) {
 
     .black-lg-700{
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
     .grey-md2{
-        font-size:0.75rem;
+        font-size:0.75rem !important;
     }
 
     .question-card , .mid-content{
@@ -63,11 +64,6 @@
     .mainconteent2{
         padding-top: 1rem;
     }
-
-    .blue-action-btn {
-        /* padding: 0.45rem 0.25rem; */
-        /* font-size: 0.85rem; */
-    }   
 
 }
 
@@ -108,9 +104,9 @@
         padding: 0.5rem 0.85rem;
     }
 
-    .ques{
+    /* .ques{
         flex-direction: column-reverse;
-    }
+    } */
 
     .custom-input2{
         height: 3rem;
@@ -125,12 +121,12 @@
 @media (max-width: 420px) {
     .question-card, .mid-content {
         width: 18rem;
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 
     .custom-input2{
-        font-size: 0.8rem;
-        padding: 0.55rem;
+        font-size: 0.8rem !important;
+        padding: 0.55rem !important;
     }
 
 }
