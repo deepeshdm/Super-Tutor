@@ -52,3 +52,13 @@
 
 }
 
+
+
+/* Apply styles when the orientation is landscape */
+@media only screen and (orientation: landscape) {
+
+    .main-bg2 {
+      padding-bottom: 11rem;
+    }
+  
+  }
