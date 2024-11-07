@@ -82,6 +82,10 @@
 
 }
 
+.main-bg2{
+    overflow-y: scroll;
+}
+
 
 /* Apply styles when the orientation is landscape */
 @media only screen and (orientation: landscape) {
