@@ -52,13 +52,13 @@
             }
     
             .blue-action-btn{
-                padding: 0.65rem 0.75rem;
+                padding: 0.65rem 0.75rem !important;
             }
     
             .custom-radio-btn{
                 width:90%;
-                min-width: none;
-                max-width: none;
+                min-width: none !important;
+                max-width: none !important;
             }
     
             @media (max-width: 550px) {
