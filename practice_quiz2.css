@@ -1,4 +1,10 @@
 
+
+input{
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+}
+
 .blue-action-btn{
     padding: 0.65rem 0.75rem;
 }
