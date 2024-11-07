@@ -3,6 +3,7 @@
 input{
     width: 2.65rem !important;
     height: 1.35rem !important;
+    min-width: unset;
 }
 
 @media (max-width: 1200px) {
