@@ -1,5 +1,14 @@
 
 
+.hover-btn{
+   &:hover{
+    opacity: 1 !important;
+    background: rgb(225, 225, 225) !important;
+   }
+}
+
+
+
 @media (max-width: 599px) {
 
     .custom-input {
