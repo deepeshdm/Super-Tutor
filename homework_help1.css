@@ -29,6 +29,10 @@
     transform: translateX(-50%); /* Adjust to perfectly center */
 }
 
+.question-card{
+    margin-bottom: 7rem;
+}
+
 @media (max-width: 1100px) {
 
     .middlepart {
