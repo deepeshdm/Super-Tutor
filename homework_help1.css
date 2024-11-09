@@ -160,6 +160,11 @@
         padding: 0.55rem !important;
     }
 
+    .fixed-input1{
+        width: 86% !important;
+        transform: translateX(-52.5%); /* Adjust to perfectly center */
+    }
+
 }
 
 
