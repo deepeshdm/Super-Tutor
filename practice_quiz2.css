@@ -32,6 +32,14 @@
         padding: 1rem 2rem !important;
     }
 
+    /* Safari-specific styles go here */
+    @supports (-webkit-touch-callout: none) {
+        .inner-con{
+            margin-top: 5rem;
+        }
+    }
+      
+
 }
 
 .top-part{
